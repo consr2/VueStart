@@ -25,12 +25,12 @@
       <!-- 메서드 이벤트를 지정 하지 못하면 강제로 지정 가능
         v-on:input="setName($event)" 다만 평시에 비추
       -->
-      <input type="text" v-on:input="setName" v-on:keyup.enter="confrim"/>
-      <p>your Name: {{name}} </p>
+      <input type="text" v-model="name"/>
+      <input type="text" v-model="familyname"/>
+      <p>your Name: {{addName}} </p>
       <form v-on:submit.prevent="submitForm">
         <input type="text">
         <button>Sing Up</button>
-
       </form>
     </section>
   </body>
